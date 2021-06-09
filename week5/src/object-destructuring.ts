@@ -35,7 +35,7 @@ console.log(id); // 1
 
 // reconstruct here
 
-const {user: newuser, address: newaddress, id: newid} = nestedObject;
+export const {user: newuser, address: newaddress, id: newid} = nestedObject;
 
 export const newnestedObject = {
   newuser,
@@ -65,7 +65,7 @@ export const greetingObject = {
   name: 'taylor'
 };
 
-export const {greeting, name} = greetingObject;
+export var {greeting, name} = greetingObject;
 
 
 console.log(greeting + ", " + name + '!');
